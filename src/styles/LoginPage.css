@@ -1,0 +1,64 @@
+
+
+/* Container for login form */
+.login-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 10px;  /* Rounded corners for the form */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px;
+  width: 100%;  /* Responsive width */
+}
+
+/* Header styling */
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333333;  /* Dark color for the header */
+}
+
+/* Input fields styling */
+.login-container input {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus state */
+.login-container input:focus {
+  border-color: #007bff;  /* Blue border on focus */
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);  /* Glow effect on focus */
+}
+
+/* Button styling */
+.login-container button {
+  padding: 12px 20px;
+  background-color: #007bff;  /* Blue background for the button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 85%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effect */
+.login-container button:hover {
+  background-color: #0056b3;  /* Darker blue on hover */
+  transform: scale(1.05);  /* Slight scale effect */
+}
+
+/* Error message styling */
+.error-message {
+  color: #dc3545; /* Red color for error */
+  font-size: 14px;
+  margin-top: 10px;
+}

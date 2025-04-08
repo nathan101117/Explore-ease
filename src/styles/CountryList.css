@@ -1,0 +1,27 @@
+.country-list {
+    margin-top: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .country-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .country-list li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .country-list li:hover {
+    background-color: #f0f0f0;
+  }
+  

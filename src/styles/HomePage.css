@@ -1,0 +1,45 @@
+.homepage-container {
+    background-image: url('../assets/landing-bg.jpg');
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Minimum height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0; /* Ensures no margin is applied */
+    padding: 0; /* Ensures no padding is applied */
+}
+
+    
+  .homepage-header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 10px;
+  }
+  
+  .homepage-header h1 {
+    font-size: 48px;
+    color: #fff;
+  }
+  
+  .homepage-header p {
+    font-size: 20px;
+    color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .homepage-button {
+    padding: 15px 30px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  .homepage-button:hover {
+    background-color: #ff4500;
+  }
+  

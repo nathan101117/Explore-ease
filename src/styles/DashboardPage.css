@@ -1,0 +1,152 @@
+/* DashboardPage.css */
+
+/* Main Container */
+.dashboard-container {
+  padding: 30px 20px;
+  background: url('../assets/landing-bg.jpg') no-repeat center center fixed; /* Background image */
+  background-size: cover; /* Make the background cover the whole screen */
+  font-family: 'Roboto', sans-serif;
+  color: #000; /* Black text color for better readability */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #000; /* Black text color */
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Description Paragraph */
+p {
+  font-size: 1.1rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Trip List Container */
+.trip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px; /* Ensure the content doesn't stretch too wide */
+  padding: 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for visual depth */
+}
+
+/* Trip Categories */
+.trip-category {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Category Headings */
+.trip-category h3 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Trip Tiles */
+.trip-tile {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.trip-tile:hover {
+  transform: translateY(-5px);
+  background-color: #e3e3e3; /* Slight hover effect */
+}
+
+.trip-tile h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.trip-tile p {
+  font-size: 0.95rem;
+  color: #666;
+  margin: 2px 0;
+}
+
+/* Trip Details */
+.trip-details {
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.trip-details p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.trip-details strong {
+  font-weight: bold;
+  color: #111;
+}
+
+/* No Trips or Loading */
+p {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 768px) {
+  .trip-list {
+    padding: 10px;
+  }
+
+  .trip-tile {
+    padding: 10px;
+  }
+
+  .trip-details {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

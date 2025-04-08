@@ -1,0 +1,77 @@
+/* Apply background image to the entire page */
+body {
+  background-image: url('../assets/landing-bg.jpg'); /* Background image for the entire page */
+  background-size: cover; /* Make the image cover the entire page */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keep the image fixed when scrolling */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Ensure the body takes up the entire viewport height */
+}
+
+/* Container for the contact form */
+.contact-container {
+  padding: 40px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background to make the form readable */
+  border-radius: 10px;  /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px;
+  width: 100%;
+  margin: 50px auto; /* Center the form in the middle */
+  z-index: 1; /* Ensure the form is above the background */
+}
+
+/* Heading for the contact form */
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #343a40;  /* Dark color for the header */
+}
+
+/* Styling for input fields and text area */
+.contact-container input, 
+.contact-container textarea {
+  display: block;
+  margin: 15px auto;
+  padding: 12px;
+  width: 85%;
+  border: 1px solid #ccc;
+  border-radius: 8px;  /* Rounded corners for inputs */
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Input and textarea focus state */
+.contact-container input:focus,
+.contact-container textarea:focus {
+  border-color: #17a2b8; /* Highlight the input fields with the primary color */
+  outline: none;  /* Remove default outline */
+  box-shadow: 0 0 8px rgba(23, 162, 184, 0.3); /* Soft glow effect on focus */
+}
+
+/* Button styling */
+.contact-container button {
+  padding: 12px 20px;
+  background-color: #ff4500; /* Teal background for the button */
+  color: #fff;
+  border: none;
+  border-radius: 8px;  /* Rounded corners for the button */
+  cursor: pointer;
+  font-size: 18px;
+  width: 85%;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+/* Button hover effect */
+.contact-container button:hover {
+  background-color: #00f7ff; /* Darker teal on hover */
+  transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+/* Optional: Add styling for any error messages */
+.contact-container .error-message {
+  color: #dc3545; /* Red color for errors */
+  font-size: 14px;
+  margin-top: 10px;
+}

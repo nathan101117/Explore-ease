@@ -1,0 +1,199 @@
+/* General Dashboard Styling */
+.admin-dashboard {
+  padding: 30px;
+  background-color: #fafafa;
+  font-family: 'Arial', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #ff5722; /* Warm orange */
+  margin-bottom: 30px;
+}
+
+/* Section Styling */
+.user-management,
+.trips-table {
+  margin-bottom: 40px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+table, th, td {
+  border: 1px solid #ffd54f; /* Light golden border */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #ff7043; /* Warm orange header */
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px 8px 0 0; /* Rounded top corners for header */
+}
+
+td {
+  background-color: #fff3e0; /* Light warm background for table cells */
+  color: #333;
+}
+
+/* Hover Effect for Rows */
+tr:hover {
+  background-color: #ffecb3; /* Light yellow hover effect for rows */
+}
+
+/* Floating Effect for Tables */
+.user-management table,
+.trips-table table {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.user-management table:hover,
+.trips-table table:hover {
+  transform: scale(1.02); /* Floating effect */
+}
+
+/* Buttons Styling */
+button {
+  padding: 8px 16px;
+  background-color: #ff7043; /* Warm button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ff5722; /* Darker warm color on hover */
+  transform: scale(1.05);
+}
+
+/* Specific Styling for Trips Table */
+.trips-table {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.trips-table:hover {
+  transform: scale(1.02); /* Floating effect */
+}
+
+.trips-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.trips-table table, th, td {
+  border: 1px solid #ffd54f; /* Light golden border */
+}
+
+.trips-table th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+.trips-table th {
+  background-color: #ff7043; /* Warm orange header */
+  color: white;
+  text-transform: uppercase;
+  border-radius: 8px 8px 0 0; /* Rounded top corners for header */
+}
+
+.trips-table td {
+  background-color: #fff3e0; /* Light warm background for table cells */
+  color: #333;
+}
+
+.trips-table tr:hover {
+  background-color: #ffecb3; /* Light yellow hover effect for rows */
+}
+
+.trips-table button {
+  padding: 8px 16px;
+  background-color: #ff7043; /* Warm button color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.trips-table button:hover {
+  background-color: #ff5722; /* Darker warm color on hover */
+  transform: scale(1.05);
+}
+
+/* Site Statistics Section */
+.site-statistics {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Admin Actions Section */
+.admin-actions {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.admin-actions button {
+  padding: 10px 20px;
+  background-color: #ff7043; /* Warm color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.admin-actions button:hover {
+  background-color: #ff5722; /* Darker warm color on hover */
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .site-statistics {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .user-management table,
+  .trips-table table {
+      margin-top: 20px;
+  }
+  
+  h1 {
+      font-size: 28px;
+  }
+}

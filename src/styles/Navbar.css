@@ -1,0 +1,127 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000; /* Fully opaque black */
+    color: #fff;
+}
+
+.brand {
+    font-size: 24px;
+    color: #ff7f50;
+    cursor: pointer; /* Change cursor to pointer */
+    transition: text-shadow 0.3s ease; /* Smooth transition for the glow effect */
+}
+
+/* Glow effect on hover */
+.brand:hover {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white; /* Adjust the glow intensity */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #ff7f50;
+}
+
+.login-button {
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.login-button:hover {
+    background-color: #ff4500;
+}
+
+/* User greeting and dropdown styles */
+.user-greeting {
+    position: relative;
+    cursor: pointer; /* Indicate it's clickable */
+    color: #fff; /* Ensure text color is visible */
+}
+
+.dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    min-width: 150px; /* Ensure dropdown has a minimum width */
+}
+
+.dropdown-menu a,
+.logout-button {
+    display: block;
+    padding: 10px 15px; /* Added padding for better click area */
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #eee; /* Add a separator line between items */
+}
+
+/* Adjust login and signup form to center alignment */
+.login-form-container {
+    display: flex;
+    justify-content: center;  /* Center the form horizontally */
+    align-items: center;      /* Align it vertically */
+    min-height: 100vh;        /* Ensure the form is vertically centered */
+    padding: 20px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 250px;         /* Limit the width of the form */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;           /* Margin between input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff7f50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.login-form button:hover {
+    background-color: #ff4500;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
